@@ -1,5 +1,30 @@
 <h1>Eat-Da-Burger</h1>
 
 <ul>
-    {{#each}}
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>
+    {{this.id}}. {{this.burger_name}} {{this.devoured}}    
+    </li>
+    {{/unless}}       
+    {{/each}}
 </ul>
+<hr>
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+        {{this.id}}. {{this.burger_name}}
+    {{/if}}
+    {{/each}}
+</ul>
+<ul>
+    <li> HI!</li>
+</ul>
+
+<form id = "add-burger" class="mb-3">
+<div class = "form-group">
+  <label for="burger-name" class="form-label">Add a Burger: </label>
+  <textarea class="form-control" rows="3"></textarea>
+  <button id = "submit-burger" type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
