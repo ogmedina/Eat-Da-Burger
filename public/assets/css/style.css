@@ -1,3 +1,91 @@
+header {
+    background: #073B4C;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px #000 solid;
+    margin-bottom: 10px;
+}
+
 body {
+    background-color: #118ab2;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* .container {
+    display: flex;
+} */
+
+#mainimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+/* 
+#container-fluid {
     background-color: blueviolet;
+} */
+
+.floatleft{
+    float:right;
+}
+
+ #noteaten{
+    float: left;
+    /* text-align: right; */
+    /* position: absolute; */
+    /* right: 400px; */
+    /* clear: right; */
+    /* margin: 0 1%;     */
+    /* width: 50%; */
+    /* background-color: darkgoldenrod; */
+    /* align-items: right; */
+    /* margin-left: auto;
+    margin-right: auto; */
+} 
+
+/* .floatright{
+    float:left;
+} */
+
+#eaten{
+    /* clear: right; */
+    float: right;
+    text-align: center;
+    /* margin: 0 1.5%; */
+    /* margin-right: 25px;  */
+     /* width: 50%;     */
+     /* background-color: chartreuse; */
+     /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin-left: 6x; */
+} 
+
+#searcharea{
+    /* background-color: darkmagenta; */
+    /* display: block; */
+    /* overflow: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test{
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    margin-right: 6px;        
+}
+
+.test li {
+    padding: 16px 24px;
+    border-bottom: 1px solid #ddd;
+    background-color: whitesmoke;
+}
+
+.test li:last-child {
+    border-bottom:none;
 }

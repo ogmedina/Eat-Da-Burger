@@ -1,27 +1,108 @@
-<h1>Eat-Da-Burger</h1>
-
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}  
-        {{> burgers/burger-block devoured=true}}    
-    {{/unless}}       
-    {{/each}}
-</ul>
-<hr>
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-        {{> burgers/burger-block devoured=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-<form id = "add-burger" class="mb-3">
-<div class = "form-group">
-  <label for="burger-title" class="form-label">Add a Burger: </label>
-  <textarea class="form-control" id = "burger-name" rows="3"></textarea>
-  <button id = "submit-burger" type="submit" class="btn btn-primary">Submit</button>
+<div id = "container-fluid">
+    <div id = "row">        
+        <div id = "noteaten" class = "col-md-6">
+            <ul class = "test floatleft">
+            {{#each burgers}}
+            {{#unless devoured}}            
+                <li>
+                {{> burgers/burger-block devoured=true}}    
+                </li>
+            {{/unless}}       
+            {{/each}}
+            </ul>
+            </div>
+          
+        <div id = "eaten" class = "col-md-6">
+            <div class = "col-md-6">              
+                <ul class = "test">     
+                {{#each burgers}}
+                {{#if devoured}}               
+                    <li>
+                        {{> burgers/burger-block devoured=false}}  
+                        {{!-- this.burger_name --}}
+                    </li>
+                {{/if}}
+                {{/each}}
+                </ul>                            
+          </div>        
+    </div>
 </div>
-</form>
+    <div id = "row">
+    <div id="searcharea" class = "col-md-4">
+            <form id = "add-burger" >
+                <div class = "form-group">
+                {{!-- <label for="burger-title" class="form-label">Add a Burger:</label> --}}
+                <textarea class="form-control" id = "burger-name" placeholder = "Add a burger here!"rows="3"></textarea>
+                <button id = "submit-burger" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div> 
+</div>
 
 
-{{!-- <button data-hamburgerid = "{{this.id}}" type = "submit">Eat Da Burger</button>     --}}
+
+{{!-- <div class="container-fluid">
+  <h1>Hello World!</h1>
+  <div class="row">
+    <div class="col-sm-6" style="background-color:yellow;">
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-6" style="background-color:pink;">
+      <p>Sed ut perspiciatis...</p>
+    </div>
+  </div>
+</div> --}}
+
+
+{{!-- <div id = "container-fluid test"> --}}
+    {{!-- <div id = "row"> --}}
+        {{!-- <div id = "col-md-4"></div> --}}
+        
+        {{!-- <div id = "col-md-4"></div> --}}
+    {{!-- </div> --}}
+{{!-- </div> --}}
+
+
+
+{{!-- class="mb-3" --}}
+
+ <!-- <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+            </ul> -->
+
+            {{!-- <div id = "container-fluid">
+    <div id = "row">        
+        <div id = "noteaten" class = "col-md-6">
+            <div class="card w-50" syle="width: 18rem;">
+            {{#each burgers}}
+            {{#unless devoured}}  
+            <ul class = "list-group list-group-flush">
+                <li class = "list-group-item">
+                {{> burgers/burger-block devoured=true}}    
+                </li>
+            {{/unless}}       
+            {{/each}}
+            </ul>
+            </div>
+          </div>    
+        <div id = "eaten" class = "col-md-6">
+            <div class="card" style="width: 18rem;">
+                {{#each burgers}}
+                {{#if devoured}}
+                <ul class = "list-group list-group-flush">                    
+                    <li class = "list-group-item">
+                        {{this.burger_name}}
+                    </li>
+                {{/if}}
+                {{/each}}
+                </ul>
+                
+            </div>           
+        </div>
+    </div> 
+</div>   --}}

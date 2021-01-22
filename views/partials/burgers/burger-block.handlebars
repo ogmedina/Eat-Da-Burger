@@ -1,10 +1,13 @@
-  <li>
-    {{this.id}}. {{this.burger_name}}
+  {{this.id}}. {{this.burger_name}}
 
-    <button class="devour-burger" data-id="{{id}}" data-newdevour="{{devoured}}">
+    <button type = "button" class="devour-burger btn btn-success" data-id="{{id}}" data-newdevour="{{devoured}}">
         {{#if devoured}}EAT-Da-Burger!{{else}}THROW UP BURGER!{{/if}}
     </button>
 
-    </li>
+  
 
     {{!-- {{this.id}}. {{this.burger_name}} {{this.devoured}} --}}
+
+
+
+    
