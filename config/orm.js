@@ -1,23 +1,18 @@
 //Import MySQL connection
 const connection = require("../config/connection.js");
 
-
-//Helper function for SQL syntax
-//Might not need ****
+//Helper function for SQL syntax to add "?"
 function printQuestionMarks(num){
     var arr = [];
-
     for (var i = 0; i < num; i++){
         arr.push("?");
     }
-
     return arr.toString();
 }
 
 //Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob){
     var arr = [];
-
     for (var key in ob){
         var value = ob[key];
         if (Object.hasOwnProperty.call(ob, key)){
@@ -30,7 +25,9 @@ function objToSql(ob){
     return arr.toString();
 }
 
+//Object for all the SQL statement functions
 var orm = {
+    //selectall function
     selectAll: function(tableInput, cb){
         var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function(err, result){
@@ -40,10 +37,9 @@ var orm = {
             cb(result);
         });
     },
-
+    //insert one function
     insertOne: function(table, cols, vals, cb){
         var queryString = "INSERT INTO " + table;
-
         queryString += " (";
         queryString += cols.toString();
         queryString += ") ";
@@ -60,10 +56,9 @@ var orm = {
             cb(result);
         });
     },
-
+    //update one function
     updateOne: function(table, objColVals, condition, cb){
         var queryString = "UPDATE " + table;
-
         queryString += " SET ";
         queryString += objToSql(objColVals);
         queryString += " WHERE ";
@@ -79,6 +74,6 @@ var orm = {
         });
     }
 };
+
 //Export the orm object for the model
-//Insert model name later
 module.exports = orm;

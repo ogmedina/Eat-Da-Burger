@@ -5,6 +5,7 @@ header {
     text-align: center;
     border-bottom: 4px #000 solid;
     margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -44,7 +45,8 @@ h1 {
     list-style-type: none;
     padding: 0;
     border: 1px solid #ddd;
-    margin-right: 6px;        
+    margin-right: 6px;    
+    font-family: 'Roboto Slab', serif;    
 }
 
 .tableburger li {
@@ -78,4 +80,5 @@ h1 {
 #buttonContainer{
     margin-top: 5px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }

@@ -4,7 +4,7 @@ const express = require("express");
 //Set up router
 var router = express.Router();
 
-//Import burger.js
+//Import burger.js to use database functions
 var burger = require("../models/burger.js");
 
 //Routes 
@@ -45,4 +45,3 @@ router.put("/api/burgers/:id", function(req, res){
 });
 
 module.exports = router;
-
