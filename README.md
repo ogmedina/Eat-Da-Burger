@@ -25,10 +25,10 @@ The program can then be run using the following command line in the bash termina
 node server.js
 ```
 ### Hosted
-The app is hosted using Heroku here at this link: [Heroku Hosted](https://desolate-eyrie-88412.herokuapp.com/)
+The app is hosted using Heroku here at this link: [Heroku Hosted Site](https://desolate-eyrie-88412.herokuapp.com/)
 
 ### Screenshots 
-[Burger1]()
+![Burger1](https://github.com/ogmedina/burger/blob/main/public/assets/img/burger1.jpg)
 
 ### License
 This project is licensed under the MIT License. 
