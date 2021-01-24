@@ -4,7 +4,8 @@
 ## Full Stack Book Camp Homework 13 - Eat-Da-Burger!
 This is the 13th assignment for the UTSA Full-Stack Bootcamp. It is a burger logger app with MySQL, Node, Express, Handlebars, and a ORM. It follows the MVC design pattern and is hosted on Heroku.
 
-Eat-Da-Burger is a restruant app that lets users input the names of the burgers they imagine. After submitting a name of a delicous burger, the left side is filled with the name inputted. Once the button is pressed to "Devour It" it is moved to the right side and has been 'consumed'. The app will store every burger in the databse, whether devoured or not.
+Eat-Da-Burger is a restruant app that lets users input the names of the burgers they imagine. After submitting the name of said delicous burger, the left side is filled
+with the name inputted. Once the button is pressed to "Devour It", it is moved to the right side and has been 'consumed'. The app will store every burger in the database, whether devoured or not.
 
 ### Table of Contents
 
