@@ -17,7 +17,7 @@ with the name inputted. Once the button is pressed to "Devour It", it is moved t
 * [Questions](#questions)
 
 ### Installation
-Please begin by uploading the schema and seed data from the db folder into your MySQL LocalHost and set up your port number, user name, and password into the connection.js file in the config folder.
+Please begin by uploading the schema and seed data from the db folder into your MySQL LocalHost and set up your port number, user name, and password in the connection.js file in the config folder.
 
 To install necessary dependencies, run the following command:
 ```
