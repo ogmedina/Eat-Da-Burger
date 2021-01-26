@@ -17,6 +17,8 @@ with the name inputted. Once the button is pressed to "Devour It", it is moved t
 * [Questions](#questions)
 
 ### Installation
+Please begin by uploading the seed data into your MySQL LocalHost and setting up your port number, user name, and password into the connection.js file in the config folder.
+
 To install necessary dependencies, run the following command:
 ```
 npm i
